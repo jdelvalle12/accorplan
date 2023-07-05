@@ -1,0 +1,125 @@
+body {
+  position: relative;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  /* font-size: 2rem; */
+  background: aliceblue;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: black;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    font-family: "Verdana", "Tahoma", sans-serif;
+    color: black;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .navbar .nav-tabs {
+    display: none;
+  }
+
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+
+  .navbar .nav-tabs.active {
+    display: flex; /* Show the menu items when active */
+    flex-direction: column; /* Adjust the layout for mobile */
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .navbar .nav-tabs.active li {
+    margin: 10px 0; /* Adjust the spacing between menu items */
+  }
+
+  .navbar .nav-tabs.active li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Media Query for Tablets and Large Mobile Devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+
+.textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
